@@ -3,7 +3,7 @@
     <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory),Microsoft.Aspnet.SessionState.sln))\tools\SessionStateModule.settings.targets" />
     <PropertyGroup>
         <AssemblyName>$(MSBuildProjectName)</AssemblyName>
-        <NuGetPackageId>$(MSBuildProjectName)</NuGetPackageId>
+        <NuGetPackageId>mellamokb.$(MSBuildProjectName)</NuGetPackageId>
         <NuSpecFile>Microsoft.AspNet.SessionState.SessionStateModule.nuspec</NuSpecFile>
     </PropertyGroup>
     <ItemGroup>

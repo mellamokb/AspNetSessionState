@@ -41,7 +41,7 @@ Relevant parameters:
     <!-- The NuGet package name inlcudes the nusepc id and version which are ultimately taken from the NuSpec file. -->
     <!-- The nuspec metadata is usually specified in the nuspec file (if provided). When NuSpec<metaName> props are specified they overwrite the nuspec items. -->
     <!-- NuGetPackageID and NuSpecID should have the same value, the former is kept for legacy reasons (same for version properties). -->
-    <NuSpecId Condition="'$(NuSpecId)' == ''">$(MSBuildProjectName)</NuSpecId>
+    <NuSpecId Condition="'$(NuSpecId)' == ''">mellamokb.$(MSBuildProjectName)</NuSpecId>
     <NuGetPackageId Condition="'$(NuGetPackageId)' == ''">$(NuSpecId)</NuGetPackageId>
     <NuGetPackageVersion Condition="'$(NuGetPackageVersion)' == ''">$(NuSpecVersion)</NuGetPackageVersion>
     <NuSpecVersion Condition="'$(NuSpecVersion)' == ''">$(NuGetPackageVersion)</NuSpecVersion>

@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Microsoft.AspNet.SessionStateCosmosDBSessionStateProviderAsync</RootNamespace>
     <AssemblyName>Microsoft.AspNet.SessionState.CosmosDBSessionStateProviderAsync</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
@@ -36,13 +36,13 @@
     <BaseIntermediateOutputPath>..\obj\</BaseIntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>$(RepositoryRoot)tools\35MSSharedLib1024.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <DelaySign>true</DelaySign>
+    <DelaySign>false</DelaySign>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -77,12 +77,6 @@
     <Compile Include="SessionStateItem.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SessionStateModule\Microsoft.AspNet.SessionState.SessionStateModule.csproj">
-      <Project>{7238f90d-3bce-4f40-a5ba-ea36ad484bd6}</Project>
-      <Name>Microsoft.AspNet.SessionState.SessionStateModule</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\SR.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>SR.Designer.cs</LastGenOutput>
@@ -95,6 +89,12 @@
     <PackageReference Include="System.Text.Json">
       <Version>7.0.0</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SessionStateModule\Microsoft.AspNet.SessionState.SessionStateModule.csproj">
+      <Project>{7238f90d-3bce-4f40-a5ba-ea36ad484bd6}</Project>
+      <Name>Microsoft.AspNet.SessionState.SessionStateModule</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

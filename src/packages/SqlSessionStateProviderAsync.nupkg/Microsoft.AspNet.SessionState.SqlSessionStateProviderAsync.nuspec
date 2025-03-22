@@ -3,8 +3,8 @@
   <metadata>
     <id>$NuGetPackageId$</id>
     <version>$NuGetPackageVersion$</version>
-    <authors>Microsoft</authors>
-    <owners>Microsoft</owners>
+    <authors>mellamokb, Microsoft</authors>
+    <owners>mellamokb, Microsoft</owners>
     <copyright>&#169; Microsoft Corporation. All rights reserved.</copyright>
     <title>Microsoft ASP.NET Async SqlSessionState Provider</title>
     <description>In .Net 4.6.2, asp.net enables developer plug in async version of SessionState module which is a good fit for the non-in-memory SessionState data store. This SessionState provider uses SQL Server as the data store and leverages async database operation to provide better scability.</description>

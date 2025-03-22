@@ -5,3 +5,8 @@ msbuild.*
 obj/
 /packages/
 .binaries/
+publish.bat
+*.vspscc
+*.vssscc
+*.suo
+*.user

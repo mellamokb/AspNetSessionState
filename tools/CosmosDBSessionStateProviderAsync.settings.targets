@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <BuildQuality Condition="'$(BuildQuality)' == ''">rtm</BuildQuality>
-    <VersionMajor>2</VersionMajor>
+    <VersionMajor>3</VersionMajor>
     <VersionMinor>0</VersionMinor>
     <VersionRelease>0</VersionRelease>
   </PropertyGroup>

@@ -1,5 +1,5 @@
 # Microsoft.AspNet.SessionState.SqlSessionStateProviderAsync
-In .Net 4.6.2, asp.net enables developer plug in async version of SessionState module which is a good fit for the non-in-memory SessionState data store. This SessionState provider uses SQL Server as the data store and leverages async database operation to provide better scability.
+In .Net 4.8, asp.net enables developer plug in async version of SessionState module which is a good fit for the non-in-memory SessionState data store. This SessionState provider uses SQL Server as the data store and leverages async database operation to provide better scability.
 
 Before you can specify this new async providers, you need to setup the new async SessionStateModule as [described here](https://github.com/aspnet/AspNetSessionState/blob/main/docs/SessionStateModule.md).
 

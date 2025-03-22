@@ -17,7 +17,7 @@ namespace Microsoft.AspNet.SessionState
     using System.Threading;
 
     /// <summary>
-    /// Async version of SessionState module which requires .Net framework 4.6.2
+    /// Async version of SessionState module which requires .Net framework 4.8
     /// </summary>
     public sealed class SessionStateModuleAsync : ISessionStateModule
     {
